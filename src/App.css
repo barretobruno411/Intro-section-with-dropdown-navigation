@@ -1,7 +1,17 @@
+:root{
+  /* ### Neutral */
+
+  --Almost-White: hsl(0, 0%, 98%);
+  --Medium-Gray: hsl(0, 0%, 41%);
+  --Almost-Black: hsl(0, 0%, 8%);
+}
+
 *{
+  font-family: 'Epilogue', sans-serif;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  
 }
 
 .listmMenu{
@@ -18,15 +28,18 @@
 }
 
 .header{
+  
   position: relative;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 15px;
-  border-bottom: 1px solid;
+  
 }
 
 .menu{
+  color: var(--Medium-Gray);
   position: absolute;
   top: 0;
   right: 0;
@@ -47,6 +60,7 @@
 }
 
 .menuButton{
+  color: var(--Medium-Gray);
   display: block;
   width: 100%;
   padding: 10px;
@@ -57,9 +71,15 @@
 }
 
 .register{
-  border: solid 1px black;
+  border: solid 1px var(--Medium-Gray);
 }
 
 .hide{
   display: none;
+}
+
+.teste{
+  background-color: black;
+  height: 100vh;
+  width: 100%;
 }
