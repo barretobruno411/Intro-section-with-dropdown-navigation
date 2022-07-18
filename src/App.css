@@ -67,12 +67,12 @@
 .menuButton{
   color: var(--Medium-Gray);
   display: block;
-  width: 100%;
+  width: 80%;
   padding: 10px;
   border-radius: 10px;
   border: none;
-  
   background-color: white;
+  margin: auto;
 }
 
 .register{
@@ -165,6 +165,7 @@
 }
 
 @media (min-width: 1024px){
+
   body{
     display: flex;
     flex-direction: row-reverse;
@@ -174,7 +175,7 @@
   .mainContainer{
 
     
-    border: solid 1px;
+    
     width: 100%;
     padding: 4vw;
 
@@ -182,7 +183,6 @@
 
   .mainContainer h1{
     width: 100%;
-    border: solid 1px;
     font-size: 95px;
     text-align:left;
     margin-top: 20px;
@@ -190,7 +190,6 @@
   }
   
   .mainContainer p{
-    border: solid 1px;
     text-align: left;
     margin-top: 40px;
     width: 400px;
@@ -222,6 +221,83 @@
   .foooter img{
     margin-left: 40px;
     width: 100px;
+  }
+
+  .header{
+    position:unset;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+  }
+
+  .listmMenu{
+    padding: 0;
+    /* position:static; */
+    display: flex;
+    /* flex-direction: row; */
+  }
+
+  /* .closeMenu{
+    padding: 0;
+    display: none;
+  } */
+  
+  .listmMenu ul{
+    position: absolute;
+    
+  }
+  .listmMenu li{
+    position: relative;
+    display: flex;
+    margin-left: 5vw;
+  }
+  
+  .listmMenu button{
+    text-align: center;
+    margin: auto;
+    margin-top: 0;
+  }
+
+  .divButtons {
+    display:flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .menuButton{
+    width: 100px;
+  }
+
+  .dropdownBTN{
+    display: inline;
+  }
+
+  .subMenu{
+
+
+    background-color: white;
+    border-radius: 10px;
+    width: 150px;
+    position:absolute;
+    right: 5px;
+    top: 43px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    
+
+  }
+
+  .subMenu li{
+    
+    display: block;
+    text-align: justify;
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .subMenu li:hover{
+    cursor: pointer;
   }
 
 }

@@ -29,7 +29,7 @@ function Header(props) {
           }}
         />
       </nav>
-      <Menu onMenuHide={onMenuHide} menuShow={menuShow}></Menu>
+      <Menu setActive={props.setActive} active={props.active} onMenuHide={onMenuHide} menuShow={menuShow}></Menu>
     </header>
   );
 }
