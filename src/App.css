@@ -95,3 +95,48 @@
   padding: 5px;
 }
 
+.backgroungImage{
+  width: 100%;
+}
+
+.mainContainer{
+  padding: 20px;
+  color: var(--Medium-Gray);
+}
+
+.mainContainer h1{
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+}
+
+.mainContainer p{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.mainContainer button{
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-weight: 800;
+  width: 120px;
+}
+
+.foooter{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.foooter img{
+  width: 60px;
+  
+}
+
