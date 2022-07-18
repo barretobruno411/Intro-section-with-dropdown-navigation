@@ -2,6 +2,10 @@ import React, { useEffect, useState } from "react";
 import menuImg from "../images/icon-close-menu.svg";
 import arowDown from "../images/icon-arrow-down.svg";
 import arrowUp from "../images/icon-arrow-up.svg";
+import todoIcon from "../images/icon-todo.svg";
+import calendarIcon from "../images/icon-calendar.svg";
+import reminderIcon from "../images/icon-reminders.svg";
+import iconPlaning from "../images/icon-planning.svg";
 function Menu(props) {
   const [active, setActive] = useState({ feature: false, company: false });
 
@@ -45,22 +49,22 @@ function Menu(props) {
       <ul className="listmMenu">
         <li>
           Features{" "}
-          <button onClick={()=>{updateFeature()}}>
-            <img src={arowDown} alt="arrowDown" />
+          <button className="dropdownBTN" onClick={()=>{updateFeature()}}>
+            <img src={active.feature ? arrowUp : arowDown} alt="arrowDown" />
           </button>
-          <ul className={active.feature ? "featuresMenu" : "featuresMenu hide"}>
-            <li>Todo List</li>
-            <li>Calendar</li>
-            <li>Reminders</li>
-            <li>Planning</li>
+          <ul className={active.feature ? "subMenu" : "subMenu hide"}>
+            <li><img src={todoIcon} alt="todoIcon" /> Todo List</li>
+            <li><img src={calendarIcon} alt="calendarIcon" /> Calendar</li>
+            <li><img src={reminderIcon} alt="reminderIcon" /> Reminders</li>
+            <li><img src={iconPlaning} alt="iconPlaning" /> Planning</li>
           </ul>
         </li>
         <li>
           Company{" "}
-          <button onClick={()=>{updateCompany()}}>
-            <img src={arowDown} alt="arrowDown" />
+          <button className="dropdownBTN" onClick={()=>{updateCompany()}}>
+            <img src={active.company ? arrowUp : arowDown} alt="arrowDown" />
           </button>
-          <ul className={active.company ? "companyMenu" : "companyMenu hide"}>
+          <ul className={active.company ? "subMenu" : "subMenu hide"}>
             <li>History</li>
             <li>Our Team</li>
             <li>Blog</li>
