@@ -17,10 +17,10 @@ function Main(props){
                 Learn more
             </button>
             <footer className='foooter'>
-                <img src={databiz} alt="databiz" />
-                <img src={audiophile} alt="audiophile" />
-                <img src={meet} alt="meet" />
-                <img src={maker} alt="maker" />
+                <img className='client' src={databiz} alt="databiz" />
+                <img className='client' src={audiophile} alt="audiophile" />
+                <img className='client' src={meet} alt="meet" />
+                <img className='client' src={maker} alt="maker" />
             </footer>
         </main>
     )

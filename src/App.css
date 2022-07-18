@@ -48,8 +48,13 @@
   height: 100vh;
   width: 65%;
   background-color: white;
+  transform: translateY();
+}
 
-
+.rest{
+  position:inherit;
+  top: 0;
+  left: 0;
 }
 
 .closeMenu{
@@ -139,4 +144,86 @@
   width: 60px;
   
 }
+
+.backgroundDesktopImage{
+  width: 100%;
+}
+
+.imageDesk{
+  padding: 8vh;
+}
+
+
+
+.courtine{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 1024px){
+  body{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center ;
+  }
+  .mainContainer{
+
+    
+    border: solid 1px;
+    width: 100%;
+    padding: 4vw;
+
+  }
+
+  .mainContainer h1{
+    width: 100%;
+    border: solid 1px;
+    font-size: 95px;
+    text-align:left;
+    margin-top: 20px;
+    color: black;
+  }
+  
+  .mainContainer p{
+    border: solid 1px;
+    text-align: left;
+    margin-top: 40px;
+    width: 400px;
+  }
+  
+  .mainContainer button{
+    margin: initial;
+    margin-top: 4vh;
+  }
+
+  .backgroungImage{
+    
+    width: 100%;
+  }
+
+  .foooter{
+    margin-top: 8vh;
+  }
+
+  .client{
+    width: 300px;
+  }
+
+  .foooter{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .foooter img{
+    margin-left: 40px;
+    width: 100px;
+  }
+
+}
+
 

@@ -17,9 +17,6 @@ function Menu(props) {
     console.log(active)
   },[active])
 
-  function addActive(){
-    active.map()
-  }
   //puting the state on a arrow function, you can access the propieties of this directly
   // in this case, i used the ...state, to spread all data, and called propiety feature to just
   // attribute new value to this, with feature: !state.feature (add the different value of actual state)

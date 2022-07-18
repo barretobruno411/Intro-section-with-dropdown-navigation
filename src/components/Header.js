@@ -18,6 +18,7 @@ function Header(props) {
 
   return (
     <header className="header">
+      <div className={menuShow ? "courtine" : "courtine hide"}></div>
       <img src={logoImg} alt="logo" />
       <nav>
         <img
